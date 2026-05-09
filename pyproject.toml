@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "everything-sdk"
+version = "1.0.0"
+description = "Python wrapper for the Windows Everything SDK (v3)"
+readme = "README.md"
+license = {text = "MIT"}
+authors = [
+    {name = "kinsurfong"}
+]
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/firesurfing/everything-sdk-python"
+Documentation = "https://github.com/firesurfing/everything-sdk-python#readme"
+Issues = "https://github.com/firesurfing/everything-sdk-python/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
